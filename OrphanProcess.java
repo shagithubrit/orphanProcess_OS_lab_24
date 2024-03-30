@@ -22,7 +22,7 @@ public class OrphanProcess {
                 e.printStackTrace();
             }
             System.out.println("Child 2 is finished.");
-            System.out.println("Child 2's parent PID is: " + ProcessHandle.current().parent().map(ProcessHandle::pid).orElse(-1));
+            System.out.println("Child 2's parent PID is: " + ProcessHandle.current().parent().map(ProcessHandle::pid).orElse(-1L));
         });
 
         // Start the child processes
